@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>
+Guess The Number!
+</title>
+</head>
+<body>
+<script>
+function guessNumber() {
+     const random = Math.floor(Math.random*10) + 1;
+     let number = parseInt(prompt('Guess a number from 1 to 10: '));
+     while(number !== random)
+     {
+       number = parseInt(prompt('Guess a number from 1 to 10: '));
+       if(number == random)
+       {
+         alert('You guessed the correct number!');
+       }
+  
+     }	 
+}
+</script>
+<center><h1>Guess the Number</h1></center>
+<center><button onClick="guessNumber()">Click Here</button></center>
+<form action = "Enter your mail id ">
+<label type ="text">First Name</label>
+<Input type="text"><br>
+<label type ="text">Last Name</label>
+<Input type="text"><br>
+<label type ="text">Password</label>
+<Input type="password"><br>
+<label type ="text">Registration Number</label>
+<Input type="text"><br>
+<h3>Choose Your Favorite Subject</h3>
+<label type ="text">Maths</label>
+<Input type="checkbox"><br>
+<label type ="text">Chemistry</label>
+<Input type="checkbox"><br>
+<label type ="text">Physics</label>
+<Input type="checkbox"><br>
+<label type ="text">Computer Science</label>
+<Input type="checkbox"><br>
+
+
+<button type="reset">Reset</button>
+<button type="submit">Submit</button>
+
+</form>
+</body>
+</html>
